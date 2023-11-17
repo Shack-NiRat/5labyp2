@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Администратор\AddPrepod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Авторизация\capcha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Авторизация\Авторизация.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Администратор\AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Администратор\Администратор.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Начальная страница.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Преподаватель\Преподаватель.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Студент\Студент.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
