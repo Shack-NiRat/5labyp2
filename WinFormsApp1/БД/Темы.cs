@@ -9,7 +9,7 @@ public partial class Темы
 
     public string ТемаДипломнойРаботы { get; set; } = null!;
 
-    public virtual Преподаватели? Преподаватели { get; set; }
+    public virtual Преподаватели КодПреподавателяNavigation { get; set; } = null!;
 
     public virtual ВыбранныеТемы ТемаДипломнойРаботыNavigation { get; set; } = null!;
 }

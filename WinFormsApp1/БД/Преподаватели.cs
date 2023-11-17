@@ -19,5 +19,5 @@ public partial class Преподаватели
 
     public string? Email { get; set; }
 
-    public virtual Темы КодПреподавателяNavigation { get; set; } = null!;
+    public virtual Темы? Темы { get; set; }
 }

@@ -1,0 +1,17 @@
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\bin\Debug\net6.0-windows\WinFormsApp2.exe
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\bin\Debug\net6.0-windows\WinFormsApp2.deps.json
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\bin\Debug\net6.0-windows\WinFormsApp2.runtimeconfig.json
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\bin\Debug\net6.0-windows\WinFormsApp2.dll
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\bin\Debug\net6.0-windows\WinFormsApp2.pdb
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.csproj.AssemblyReference.cache
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.Form1.resources
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.csproj.GenerateResource.cache
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.GeneratedMSBuildEditorConfig.editorconfig
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.AssemblyInfoInputs.cache
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.AssemblyInfo.cs
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.csproj.CoreCompileInputs.cache
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.dll
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\refint\WinFormsApp2.dll
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.pdb
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.genruntimeconfig.cache
+B:\ИСПО\4КУРС\УпНоябрь\5 задание\WinFormsApp1\WinFormsApp2\obj\Debug\net6.0-windows\ref\WinFormsApp2.dll

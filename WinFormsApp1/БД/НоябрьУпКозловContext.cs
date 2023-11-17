@@ -17,6 +17,8 @@ public partial class НоябрьУпКозловContext : DbContext
 
     public virtual DbSet<Autorisation> Autorisations { get; set; }
 
+    public virtual DbSet<History> Histories { get; set; }
+
     public virtual DbSet<ВыбранныеТемы> ВыбранныеТемыs { get; set; }
 
     public virtual DbSet<Отметки> Отметкиs { get; set; }
@@ -27,38 +29,12 @@ public partial class НоябрьУпКозловContext : DbContext
 
     public virtual DbSet<Темы> Темыs { get; set; }
 
-    public virtual DbSet<History> Histories { get; set; }
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Initial Catalog = НоябрьУпКозлов ;Trusted_Connection=True; Encrypt=False;");
+        => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Initial Catalog =НоябрьУпКозлов ; Trusted_Connection=True;Encrypt = false ");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<History>(entity =>
-        {
-            entity
-                .HasKey(e => e.Date);
-            entity
-                .ToTable("History");
-
-            entity.Property(e => e.Login)
-                .HasMaxLength(20)
-                .HasColumnName("login");
-
-            entity.Property(e => e.Role)
-                .HasMaxLength(20)
-                .HasColumnName("role");
-
-            entity.Property(e => e.Status)
-                .HasMaxLength(20)
-                .HasColumnName("status");
-
-            entity.Property(e => e.Date)
-                .HasColumnName("date");
-        });
-
-
         modelBuilder.Entity<Autorisation>(entity =>
         {
             entity
@@ -74,6 +50,29 @@ public partial class НоябрьУпКозловContext : DbContext
             entity.Property(e => e.Role)
                 .HasMaxLength(20)
                 .HasColumnName("role");
+        });
+
+        modelBuilder.Entity<History>(entity =>
+        {
+            entity.HasKey(e => e.Date);
+
+            entity.ToTable("History");
+
+            entity.Property(e => e.Date)
+                .HasColumnType("datetime")
+                .HasColumnName("date");
+            entity.Property(e => e.Login)
+                .HasMaxLength(20)
+                .IsFixedLength()
+                .HasColumnName("login");
+            entity.Property(e => e.Role)
+                .HasMaxLength(20)
+                .IsFixedLength()
+                .HasColumnName("role");
+            entity.Property(e => e.Status)
+                .HasMaxLength(20)
+                .IsFixedLength()
+                .HasColumnName("status");
         });
 
         modelBuilder.Entity<ВыбранныеТемы>(entity =>
@@ -126,11 +125,6 @@ public partial class НоябрьУпКозловContext : DbContext
             entity.Property(e => e.Фио)
                 .HasMaxLength(80)
                 .HasColumnName("ФИО");
-
-            entity.HasOne(d => d.КодПреподавателяNavigation).WithOne(p => p.Преподаватели)
-                .HasForeignKey<Преподаватели>(d => d.КодПреподавателя)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Преподаватели_Темы");
         });
 
         modelBuilder.Entity<Студенты>(entity =>
@@ -161,6 +155,11 @@ public partial class НоябрьУпКозловContext : DbContext
             entity.Property(e => e.ТемаДипломнойРаботы)
                 .HasMaxLength(80)
                 .HasColumnName("Тема дипломной работы");
+
+            entity.HasOne(d => d.КодПреподавателяNavigation).WithOne(p => p.Темы)
+                .HasForeignKey<Темы>(d => d.КодПреподавателя)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Темы_Преподаватели");
 
             entity.HasOne(d => d.ТемаДипломнойРаботыNavigation).WithMany(p => p.Темыs)
                 .HasForeignKey(d => d.ТемаДипломнойРаботы)
